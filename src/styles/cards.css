@@ -1,0 +1,17 @@
+.glass {
+  background: rgba(255,255,255,.04);
+
+  border: 1px solid var(--border);
+
+  backdrop-filter: blur(18px);
+
+  border-radius: var(--radius-lg);
+
+  box-shadow: var(--shadow);
+
+  transition: var(--transition);
+}
+
+.glass:hover {
+  border-color: rgba(59,130,246,.35);
+}

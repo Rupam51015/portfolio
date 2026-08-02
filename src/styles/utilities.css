@@ -1,0 +1,73 @@
+/* ===========================
+   FLEX
+=========================== */
+
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ===========================
+   GRID
+=========================== */
+
+.grid {
+  display: grid;
+}
+
+/* ===========================
+   TEXT
+=========================== */
+
+.text-center {
+  text-align: center;
+}
+
+.text-primary {
+  color: var(--primary);
+}
+
+.text-secondary {
+  color: var(--text-secondary);
+}
+
+/* ===========================
+   SPACING
+=========================== */
+
+.mt-1 {
+  margin-top: 8px;
+}
+
+.mt-2 {
+  margin-top: 16px;
+}
+
+.mt-3 {
+  margin-top: 24px;
+}
+
+.mb-1 {
+  margin-bottom: 8px;
+}
+
+.mb-2 {
+  margin-bottom: 16px;
+}
+
+.mb-3 {
+  margin-bottom: 24px;
+}
+
+/* ===========================
+   WIDTH
+=========================== */
+
+.w-full {
+  width: 100%;
+}

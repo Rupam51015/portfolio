@@ -1,0 +1,428 @@
+/* ==========================================================
+   HERO SECTION
+========================================================== */
+
+.hero-section {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hero-wrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1.2fr 1.2fr;
+  align-items: center;
+  gap: 80px;
+}
+
+/* ==========================================================
+   BACKGROUND
+========================================================== */
+
+.bg-gradient-one,
+.bg-gradient-two {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(180px);
+  z-index: -1;
+}
+
+.bg-gradient-one {
+  width: 700px;
+  height: 700px;
+  top: -250px;
+  right: -180px;
+  background: var(--primary-dark);
+  opacity: .18;
+}
+
+.bg-gradient-two {
+  width: 500px;
+  height: 500px;
+  bottom: -180px;
+  left: -150px;
+  background: var(--secondary);
+  opacity: .15;
+}
+
+/* ==========================================================
+   HERO LEFT
+========================================================== */
+
+.hero-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-tag {
+  display: inline-flex;
+  align-items: center;
+
+  width: fit-content;
+
+  padding: 12px 20px;
+
+  border-radius: 999px;
+
+  background: rgba(59,130,246,.12);
+
+  color: var(--primary);
+
+  margin-bottom: 30px;
+
+  font-weight: 600;
+}
+
+.hero-title {
+    display: flex;
+    flex-direction: column;
+
+    font-family: "Space Grotesk", sans-serif;
+    font-size: clamp(5rem, 8vw, 7rem);
+    font-weight: 700;
+
+    line-height: .9;
+    letter-spacing: -0.05em;
+
+    margin-bottom: 24px;
+}
+
+.gradient-name {
+  background: linear-gradient(
+    90deg,
+    var(--primary),
+    var(--secondary)
+  );
+
+  background-clip: text;
+  -webkit-background-clip: text;
+
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-role {
+  min-height: 55px;
+
+  font-size: 2rem;
+
+  font-weight: 700;
+
+  color: var(--text);
+}
+
+.hero-description {
+  max-width: 650px;
+
+  margin: 28px 0;
+
+  color: var(--text-secondary);
+
+  line-height: 1.9;
+}
+
+/* ==========================================================
+   TECH STACK
+========================================================== */
+
+.tech-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+
+  margin: 24px 0;
+}
+
+.tech-pill {
+  padding: 10px 18px;
+
+  border-radius: 999px;
+
+  background: rgba(255,255,255,.05);
+
+  border: 1px solid var(--border);
+
+  transition: var(--transition);
+
+  font-size: .95rem;
+}
+
+.tech-pill:hover {
+  background: var(--primary-dark);
+  transform: translateY(-2px);
+}
+
+/* ==========================================================
+   BUTTONS
+========================================================== */
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+
+  margin: 35px 0;
+}
+
+/* ==========================================================
+   SOCIAL ICONS
+========================================================== */
+
+.social-icons {
+  display: flex;
+  gap: 22px;
+
+  font-size: 30px;
+
+  margin-bottom: 40px;
+}
+
+.social-icons a {
+  color: var(--text);
+
+  transition: var(--transition);
+}
+
+.social-icons a:hover {
+  color: var(--primary);
+  transform: translateY(-4px);
+}
+
+/* ==========================================================
+   STATS
+========================================================== */
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+}
+
+.stat-box {
+  text-align: center;
+}
+
+.stat-box h3 {
+  color: var(--primary);
+  font-size: 2rem;
+  margin-bottom: 6px;
+}
+
+.stat-box p {
+  color: var(--text-secondary);
+}
+
+/* ==========================================================
+   HERO RIGHT
+========================================================== */
+
+.hero-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ==========================================================
+   PROFILE CARD
+========================================================== */
+
+.profile-card {
+  position: relative;
+
+  width: 420px;
+  height: 560px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 40px;
+
+  border-radius: var(--radius-lg);
+
+  overflow: visible;
+}
+
+.profile-photo-wrapper {
+  width: 260px;
+  height: 330px;
+
+  overflow: hidden;
+
+  border-radius: var(--radius-md);
+
+  border: 3px solid rgba(59,130,246,.55);
+
+  box-shadow: 0 0 60px rgba(37,99,235,.25);
+}
+
+.profile-photo {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition: .4s;
+}
+
+.profile-photo:hover {
+  transform: scale(1.05);
+}
+
+/* ==========================================================
+   AVAILABILITY
+========================================================== */
+
+.availability-badge {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  margin-top: 30px;
+
+  padding: 12px 22px;
+
+  border-radius: 999px;
+
+  background: var(--surface);
+
+  border: 1px solid var(--border);
+}
+
+.status-dot {
+  width: 10px;
+  height: 10px;
+
+  border-radius: 50%;
+
+  background: #22c55e;
+}
+
+/* ==========================================================
+   FLOATING ICONS
+========================================================== */
+
+.floating-icon {
+  position: absolute;
+
+  width: 60px;
+  height: 60px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 18px;
+
+  background: var(--surface);
+
+  border: 1px solid var(--border);
+
+  color: var(--primary);
+
+  font-size: 28px;
+
+  box-shadow: var(--shadow);
+
+  transition: var(--transition);
+}
+
+.floating-icon:hover {
+  background: var(--primary);
+
+  color: white;
+
+  transform: scale(1.12);
+}
+
+.aws {
+  top: 60px;
+  left: -30px;
+}
+
+.docker {
+  top: 60px;
+  right: -30px;
+}
+
+.terraform {
+  bottom: 120px;
+  left: -30px;
+}
+
+.kubernetes {
+  bottom: 120px;
+  right: -30px;
+}
+
+.github {
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media (max-width: 1024px) {
+
+  .hero-wrapper {
+    grid-template-columns: 1fr;
+    gap: 70px;
+    text-align: center;
+  }
+
+  .hero-left {
+    align-items: center;
+  }
+
+  .hero-description {
+    max-width: 700px;
+  }
+
+  .hero-buttons,
+  .tech-pills,
+  .social-icons {
+    justify-content: center;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(3,1fr);
+  }
+
+  .profile-card {
+    width: 100%;
+    max-width: 420px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .hero-section {
+    padding-top: 100px;
+  }
+
+  .hero-title {
+    font-size: 3rem;
+  }
+
+  .hero-role {
+    font-size: 1.5rem;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .floating-icon {
+    display: none;
+  }
+
+}

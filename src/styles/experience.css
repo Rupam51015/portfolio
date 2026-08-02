@@ -1,0 +1,94 @@
+/* ============================
+   EXPERIENCE SECTION
+============================ */
+
+.experience-section {
+  padding: 120px 0;
+}
+
+.timeline-card {
+  max-width: 900px;
+  margin: 60px auto 0;
+  padding: 40px;
+  border-radius: 24px;
+}
+
+.timeline-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.timeline-header h3 {
+  font-size: 2rem;
+}
+
+.timeline-header span {
+  color: #60A5FA;
+  font-weight: 600;
+}
+
+.timeline-location {
+  color: #94A3B8;
+  margin-bottom: 30px;
+}
+
+.timeline-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.timeline-list li {
+  position: relative;
+  padding-left: 32px;
+  margin-bottom: 22px;
+  line-height: 1.8;
+  color: #CBD5E1;
+}
+
+.timeline-list li::before {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+
+  top: 10px;
+
+  width: 12px;
+
+  height: 12px;
+
+  border-radius: 50%;
+
+  background: #3B82F6;
+
+  box-shadow: 0 0 10px rgba(59,130,246,.5);
+}
+
+.timeline-card:hover {
+  transform: translateY(-6px);
+  transition: .3s;
+}
+
+@media(max-width:768px){
+
+.timeline-header{
+
+flex-direction:column;
+
+align-items:flex-start;
+
+gap:10px;
+
+}
+
+.timeline-card{
+
+padding:28px;
+
+}
+
+}

@@ -1,0 +1,48 @@
+/* ===========================
+   CONTACT SECTION
+=========================== */
+
+.contact-section {
+  padding: 120px 0;
+}
+
+.contact-card {
+  background: var(--surface);
+
+  border: 1px solid var(--border);
+
+  border-radius: var(--radius-lg);
+
+  padding: 48px;
+
+  text-align: center;
+
+  box-shadow: var(--shadow);
+}
+
+.contact-card h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.contact-card p {
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 32px;
+}
+
+.contact-links a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.contact-links a:hover {
+  color: var(--secondary);
+}

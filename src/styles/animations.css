@@ -1,0 +1,63 @@
+@keyframes float{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-12px);
+
+}
+
+100%{
+
+transform:translateY(0);
+
+}
+
+}
+
+@keyframes glow{
+
+0%{
+
+box-shadow:0 0 20px rgba(59,130,246,.15);
+
+}
+
+50%{
+
+box-shadow:0 0 45px rgba(59,130,246,.35);
+
+}
+
+100%{
+
+box-shadow:0 0 20px rgba(59,130,246,.15);
+
+}
+
+}
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:translateY(40px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}

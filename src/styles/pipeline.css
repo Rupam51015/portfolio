@@ -1,0 +1,149 @@
+.pipeline-section{
+    padding:120px 0;
+}
+
+.pipeline{
+
+    max-width:700px;
+
+    margin:60px auto 0;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+.pipeline-node{
+
+    width:320px;
+
+    padding:24px;
+
+    text-align:center;
+
+    border-radius:20px;
+
+    transition:var(--transition);
+
+}
+
+.pipeline-node:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.pipeline-node h3{
+
+    margin-bottom:8px;
+
+}
+
+.pipeline-node p{
+
+    color:var(--text-secondary);
+
+}
+
+.pipeline-line {
+
+    width:4px;
+
+    height:60px;
+
+    margin:14px auto;
+
+    border-radius:999px;
+
+    transform-origin:top;
+
+    background:linear-gradient(
+        to bottom,
+        var(--primary),
+        var(--secondary)
+    );
+
+    box-shadow:
+        0 0 10px rgba(59,130,246,.5);
+
+}
+
+.pipeline-number{
+
+width:34px;
+height:34px;
+
+margin:0 auto 16px;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+border-radius:50%;
+
+background:var(--primary);
+
+color:white;
+
+font-weight:700;
+
+}
+
+.pipeline-icon{
+
+font-size:2.5rem;
+
+margin-bottom:18px;
+
+}
+
+.pipeline-details{
+
+margin-top:18px;
+
+list-style:none;
+
+padding:0;
+
+display:flex;
+
+flex-direction:column;
+
+gap:8px;
+
+}
+
+.pipeline-details li{
+
+color:var(--text-secondary);
+
+font-size:.92rem;
+
+}
+
+.pipeline-logo {
+  width: 72px;
+  height: 72px;
+
+  margin: 0 auto 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pipeline-logo img {
+  width: 60px;
+  height: 60px;
+
+  object-fit: contain;
+
+  transition: var(--transition);
+}
+
+.pipeline-node:hover .pipeline-logo img {
+  transform: scale(1.1);
+}

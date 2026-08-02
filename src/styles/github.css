@@ -1,0 +1,63 @@
+.github-section{
+
+padding:120px 0;
+
+}
+
+.github-card{
+
+padding:50px;
+
+border-radius:28px;
+
+text-align:center;
+
+margin-bottom:50px;
+
+}
+
+.github-card h1{
+
+font-size:4rem;
+
+color:#3B82F6;
+
+margin:20px 0;
+
+}
+
+.repo-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+gap:30px;
+
+}
+
+.repo-card{
+
+padding:30px;
+
+border-radius:24px;
+
+transition:.3s;
+
+}
+
+.repo-card:hover{
+
+transform:translateY(-8px);
+
+}
+
+.repo-card p{
+
+margin:20px 0;
+
+color:#94A3B8;
+
+line-height:1.8;
+
+}
