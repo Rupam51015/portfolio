@@ -1,75 +1,117 @@
-# React + TypeScript + Vite
+# 🚀 Rupam Debnath | DevOps Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center">
+  <img src="./public/preview.png" alt="Portfolio Preview" width="100%" />
+</p>
 
-Currently, two official plugins are available:
+<p align="center">
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite)
+![Framer Motion](https://img.shields.io/badge/Framer_Motion-black?style=for-the-badge&logo=framer)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3)
 
-## React Compiler
+</p>
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🌐 Live Demo
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+🔗 **Portfolio:** https://your-domain.vercel.app
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+# 📖 About
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+This is my personal portfolio website built to showcase my experience, projects, certifications, and technical expertise as a **DevOps Engineer**.
 
-```
+The website is designed with a modern UI, smooth animations, responsive layouts, reusable component architecture, and production-ready best practices.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+# ✨ Features
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- 🎨 Modern UI/UX
+- 🌙 Dark & Light Theme
+- 📱 Fully Responsive Design
+- ⚡ Built with React + Vite
+- 🎬 Smooth Framer Motion Animations
+- 🧩 Component-Based Architecture
+- 📂 Featured Projects Section
+- 💼 Professional Experience Timeline
+- 🏆 Certifications Showcase
+- 📬 Contact Section
+- 🔍 SEO Optimized
+- 🚀 Vercel Ready
 
-```
+---
+
+# 🛠 Tech Stack
+
+### Frontend
+
+- React
+- TypeScript
+- Vite
+- CSS3
+
+### Animation
+
+- Framer Motion
+
+### Icons
+
+- React Icons
+
+### Deployment
+
+- Vercel
+
+---
+
+# 📂 Project Structure
+
+```text
+src
+│
+├── components
+│   ├── Navbar
+│   ├── Footer
+│   └── ThemeToggle
+│
+├── context
+│   └── ThemeContext
+│
+├── data
+│   ├── profile
+│   ├── projects
+│   ├── experience
+│   ├── certifications
+│   ├── skills
+│   └── social
+│
+├── features
+│   ├── hero
+│   ├── about
+│   ├── skills
+│   ├── projects
+│   ├── experience
+│   ├── certifications
+│   └── contact
+│
+├── styles
+│   ├── globals
+│   ├── variables
+│   ├── utilities
+│   ├── hero
+│   ├── about
+│   ├── skills
+│   ├── projects
+│   ├── experience
+│   ├── certifications
+│   ├── contact
+│   └── footer
+│
+├── App.tsx
+└── main.tsx
