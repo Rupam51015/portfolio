@@ -2,7 +2,7 @@ export const profile = {
   name: "Rupam Debnath",
   title: "DevOps Engineer",
   location: "Bengaluru, India",
-  email: "rumapdebnath75@gmail.com",
+  email: "rupam.debnath1106@gmail.com",
   github: "https://github.com/Rupam51015",
   linkedin: "https://www.linkedin.com/in/rupam-debnath5/",
   resumeUrl: "/resume.pdf",
